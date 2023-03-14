@@ -236,6 +236,13 @@
   background-color: #0A0A0A;
 }
 
+.benefits__desc-list-number, 
+.benefits__desc-list-heading {
+  padding: 0;
+  margin: 0;
+}
+
+
 .benefits__desc-title {
   font-size: 60px;
   line-height: 64px;
@@ -268,6 +275,7 @@
   min-height: 480px;
   border-radius: 12px;
   padding: 129px 0 0 32px;
+  box-sizing: border-box;
 }
 
 .pink {
@@ -315,6 +323,7 @@
   flex-direction: column;
   padding-left: 96px;
   padding-top: 90px;
+  box-sizing: border-box;
 }
 
 .feedback__form-heading {
