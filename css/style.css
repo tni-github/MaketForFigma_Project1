@@ -328,6 +328,7 @@
   font-size: 16px;
   line-height: 24px;
   max-width: 434px;
+  padding-bottom: 16px;
 }
 
 .form {
@@ -336,11 +337,13 @@
 }
 
 .input-text {
-  height: 80px;
+  height: 100%;
   max-width: 480px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #0A0A0A;
+  padding-top: 57px;
+  box-sizing: border-box;
 }
 
 .input-checkbox-text {
@@ -357,13 +360,27 @@
 #agree {
   height: 20px;
   width: 20px;
-  /* border: 2px solid #0A0A0A;
-  border-radius: 4px; */
+  display: none;
 }
 
-#agree:checked {
-  color: #0A0A0A;
-  background-color: #0A0A0A;
+#agree:checked + span::before {
+  content: "x";
+}
+
+.feedback__form-wrapper span::before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #0A0A0A;
+  border-radius: 4px;
+  top: 0px;
+  margin-right: 12px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 .form-button {
